@@ -14,7 +14,7 @@ precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 
 // Handle all navigation requests — serve the app shell (SPA routing)
-const handler = createHandlerBoundToURL('/index.html');
+const handler = createHandlerBoundToURL((import.meta.env.BASE_URL || '/') + 'index.html');
 const navigationRoute = new NavigationRoute(handler, {
   // Exclude API requests and other non-HTML requests from this rule
   denylist: [/^\/_/, /\/[^/?]+\.[^/]+$/],
