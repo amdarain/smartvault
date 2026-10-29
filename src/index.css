@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: rgb(249 250 251);
+    color: rgb(17 24 39);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dark body {
+    background-color: rgb(3 7 18);
+    color: rgb(243 244 246);
+  }
+}
